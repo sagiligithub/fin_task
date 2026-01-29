@@ -17,6 +17,8 @@
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.login>squ_1c7fae203d21ff07b12923cda615b41005835760</sonar.login>
+
   </properties>
   <build>
     <pluginManagement>
