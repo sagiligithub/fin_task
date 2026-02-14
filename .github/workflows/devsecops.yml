@@ -2,7 +2,12 @@ name: DevSecOps CI
 
 on:
   push:
-    branches: [ master ] 
+    branches: [ master ]
+  - name: Build with Maven
+  run: mvn clean install -Denforcer.skip=true
+      - name: OWASP Dependency Check
+      
+        run: mvn org.owasp:dependency-check-maven:check -Denforcer.skip=true
 
 jobs:
   build:
